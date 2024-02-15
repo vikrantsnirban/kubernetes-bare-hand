@@ -10,6 +10,8 @@ We will now install the kubernetes components
 
 The Certificates and Configuration are created on `master-1` node and then copied over to workers using `scp`.
 Once this is done, the commands are to be run on first worker instance: `worker-1`. Login to first worker instance using SSH Terminal.
+We should enable linux header using command: sudo apt-get install -y linux-headers-generic
+Also Disable swap on worker node by command: swapoff -a
 
 ### Provisioning Kubelet Client Certificates
 
